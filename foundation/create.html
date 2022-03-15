@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <title>Create</title>
+</head>
+<body>
+    <div class="layer">
+        <div class="container">
+            <div class="head">
+                <h1>Create Club</h1>
+                <img src="img/group.jpg" alt="">
+            </div>
+            <div class="form">
+                <div class="block">
+                    <i class="fas fa-file-image"></i>
+                    <input type="file" id="upload" placeholder="upload">
+                </div>
+                <div class="block">
+                    <i class="fas fa-users"></i>
+                    <input type="text" id="gname" placeholder="Club Name">
+                </div>
+                <div class="block">
+                    <i class="fas fa-users"></i>
+                    <input type="text" id="gid" placeholder="Club Id">
+                </div>
+                <div class="block">
+                    <label id="privacy" for="privacy">Privacy</label>
+                    <label for="lock"><i class="fas fa-lock"></i></label>
+                    <input type="radio" id="lock" name="privacy">
+                    <label for="lock"><i class="fas fa-lock-open"></i></label>
+                    <input type="radio" id="open" name="privacy">
+                </div>
+                <div class="block">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Description...."></textarea>
+                </div>
+                <div class="block">
+                    <button><a class="link">Create Club</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

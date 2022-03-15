@@ -1,0 +1,131 @@
+* { 
+    margin: 0;padding: 0;
+}
+/* basic design using grid */
+.container {
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: min-content 1fr;
+    color: white;
+}
+
+.nav {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.content {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+}
+
+
+/* basic desing using end */
+
+body {
+    background: linear-gradient(to right,rgb(43, 43, 73),rgb(75, 46, 75));
+    font-family: cursive;
+}
+
+.container {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.nav {
+    position: fixed;
+    background: linear-gradient(rgb(44, 44, 77),rgb(75, 46, 75));
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+}
+
+.navbar {
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+}
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li {
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: rgb(81, 90, 114);
+}
+.navbar ul li:last-child {
+    margin-left: auto;
+}
+.fas {
+    padding-right: 3px;
+}
+
+/* nav finished */
+
+/* content */
+.content-box {
+    padding-top: 5rem;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    font-size: 60px;
+    color: rgb(216, 206, 206);
+}
+
+.ite {
+    width: 300px;
+    height: 200;
+    margin: 20px;
+    border: 1px ridge rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+}
+
+.ite h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.ite p {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.ite button {
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(rgb(80, 40, 80),rgb(64, 64, 121));
+}
+.ite input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    border: none;
+    background-color: rgb(105, 54, 105);
+    margin-bottom: 5px;
+}
+
+.ite:hover {
+    background: linear-gradient(rgb(78, 41, 78),rgb(33, 33, 66));
+    transform: scale(0.95);
+}
